@@ -3,52 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>NV Portfolio</title>
+    <title>NV Portfolio - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to NV Portfolio</h1>
-        <h2>Your one-stop solutions for premium services</h2>
-    </header>
+    <!-- Floating Background Images -->
+    <div class="floating-bg">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=300&h=300&fit=crop" class="float-img float1">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=300&fit=crop" class="float-img float2">
+        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=300&h=300&fit=crop" class="float-img float3">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&h=300&fit=crop" class="float-img float4">
+    </div>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Dedicated to delivering excellence across various domains—film, fitness, co-working, and café services.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">NV<span>Portfolio</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1 class="hero-heading">Welcome to <span>NV Portfolio</span></h1>
+            <p class="hero-subheading">Creating Amazing Digital Experiences</p>
+        </div>
     </section>
 
-    <section class="portfolio">
-        <h2>My Work</h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item">
-                <img src="https://nvcafe.vercel.app/logo.png" alt="NV Cafe" />
-                <p>NV Cafe - A premium coffee experience</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://officewings.vercel.app/logo.png" alt="Office Wings" />
-                <p>Office Wings - Find your perfect coworking space</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://nv-filmstudio.vercel.app/logo.png" alt="NV Film Studio" />
-                <p>NV Film Studio - Creating cinematic experiences</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://nvgymfitness.vercel.app/logo.png" alt="NV Gym Fitness" />
-                <p>NV Gym Fitness - Build your dream body</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate Full Stack Developer with expertise in modern web technologies. I create responsive, fast, and user-friendly websites that stand out.</p>
             </div>
         </div>
     </section>
 
-    <section class="why-me">
-        <h2>Why Choose Me?</h2>
-        <p>With a proven track record and 4-star ratings across my services, I ensure the highest level of satisfaction and quality.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://nv-filmstudio.vercel.app/screenshot.png" alt="NV Film Studio">
+                    <div class="portfolio-overlay">
+                        <h3>NV Film Studio</h3>
+                        <a href="https://nv-filmstudio.vercel.app/" target="_blank" class="visit-btn">Visit Site</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://officewings.vercel.app/screenshot.png" alt="Office Wings">
+                    <div class="portfolio-overlay">
+                        <h3>Office Wings</h3>
+                        <a href="https://officewings.vercel.app/" target="_blank" class="visit-btn">Visit Site</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://nvcafe.vercel.app/screenshot.png" alt="NV Cafe">
+                    <div class="portfolio-overlay">
+                        <h3>NV Cafe</h3>
+                        <a href="https://nvcafe.vercel.app/" target="_blank" class="visit-btn">Visit Site</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://nvgymfitness.vercel.app/screenshot.png" alt="NV Gym Fitness">
+                    <div class="portfolio-overlay">
+                        <h3>NV Gym Fitness</h3>
+                        <a href="https://nvgymfitness.vercel.app/" target="_blank" class="visit-btn">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <h2>Contact Us</h2>
-        <p>Phone: <span class="whatsapp-icon">📞 8796493504</span></p>
-        <p>Email: <span class="email-icon">✉️ dadadesigner19@gmail.com</span></p>
-    </footer>
+    <!-- Why Me Section -->
+    <section id="why-me" class="why-me">
+        <div class="container">
+            <h2 class="section-title">Why Choose Me?</h2>
+            <div class="why-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>4.9/5 (50+ Projects)</span>
+                </div>
+                <p>✅ Fast & Responsive Websites | ✅ Modern UI/UX Design | ✅ SEO Optimized | ✅ Mobile First Approach | ✅ Lifetime Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/8796493504" target="_blank">+91 8796493504</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:dadadesigner19@gmail.com">dadadesigner19@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <p class="contact-desc">Ready to transform your ideas into reality? Let's create something amazing together!</p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
