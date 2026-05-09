@@ -94,3 +94,15 @@ document.addEventListener('mousemove', (e) => {
     transform: scale(2);
 }
 */
+// Portfolio Lightbox
+document.addEventListener('DOMContentLoaded', function() {
+  // WhatsApp click animation
+  document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        this.style.transform = '';
+      }, 150);
+    });
+  });
+});
