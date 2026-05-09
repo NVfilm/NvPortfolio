@@ -3,266 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NV Portfolio | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>NV Portfolio</title>
 </head>
 <body>
-    <!-- Floating Background Elements -->
-    <div class="floating-bg">
-        <div class="float-item float-1"></div>
-        <div class="float-item float-2"></div>
-        <div class="float-item float-3"></div>
-        <div class="float-item float-4"></div>
-        <div class="float-item float-5"></div>
-    </div>
+    <header>
+        <h1>Welcome to NV Portfolio</h1>
+        <h2>Your one-stop solutions for premium services</h2>
+    </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="nv-highlight">NV</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Dedicated to delivering excellence across various domains—film, fitness, co-working, and café services.</p>
+    </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="main-title">
-                    <span class="line">Hi, I'm</span>
-                    <span class="nv-big">NV</span>
-                    <span class="line">Web Developer</span>
-                </h1>
-                <p class="hero-desc">I create stunning websites with modern animations and floating effects. Check out my work below!</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+    <section class="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="https://nvcafe.vercel.app/logo.png" alt="NV Cafe" />
+                <p>NV Cafe - A premium coffee experience</p>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-img"></div>
-                    <div class="profile-glow"></div>
-                </div>
+            <div class="portfolio-item">
+                <img src="https://officewings.vercel.app/logo.png" alt="Office Wings" />
+                <p>Office Wings - Find your perfect coworking space</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://nv-filmstudio.vercel.app/logo.png" alt="NV Film Studio" />
+                <p>NV Film Studio - Creating cinematic experiences</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://nvgymfitness.vercel.app/logo.png" alt="NV Gym Fitness" />
+                <p>NV Gym Fitness - Build your dream body</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="nv-highlight">About</span> Me
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate web developer specializing in modern, animated websites with floating effects and smooth transitions. I love creating pixel-perfect designs that stand out.</p>
-                    <div class="skills">
-                        <div class="skill-item">HTML/CSS</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Node.js</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="why-me">
+        <h2>Why Choose Me?</h2>
+        <p>With a proven track record and 4-star ratings across my services, I ensure the highest level of satisfaction and quality.</p>
     </section>
 
-    <!-- Projects Section -->
- <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title text-center">
-          <h2>My Projects</h2>
-          <span class="title-line"></span>
-          <p>Recent websites jo maine banaye hain</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row portfolio-container">
-      <!-- NV Film Studio -->
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="https://nv-filmstudio.vercel.app/screenshot.png" class="img-fluid" alt="NV Film Studio" 
-               onerror="this.src='https://via.placeholder.com/400x250/1e3a8a/ffffff?text=NV+Film+Studio'">
-          <div class="portfolio-info">
-            <h4>NV Film Studio</h4>
-            <p>Film Production Website</p>
-            <div class="portfolio-links">
-              <a href="https://nv-filmstudio.vercel.app/" target="_blank" class="portfolio-link">
-                <i class="bx bx-link-external"></i>
-              </a>
-              <a href="https://nv-filmstudio.vercel.app/" data-gallery="portfolioGallery" 
-                 class="portfolio-lightbox" title="NV Film Studio">
-                <i class="bx bx-search"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Office Wings -->
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="https://officewings.vercel.app/screenshot.png" class="img-fluid" alt="Office Wings" 
-               onerror="this.src='https://via.placeholder.com/400x250/059669/ffffff?text=Office+Wings'">
-          <div class="portfolio-info">
-            <h4>Office Wings</h4>
-            <p>Office Space Booking</p>
-            <div class="portfolio-links">
-              <a href="https://officewings.vercel.app/" target="_blank" class="portfolio-link">
-                <i class="bx bx-link-external"></i>
-              </a>
-              <a href="https://officewings.vercel.app/" data-gallery="portfolioGallery" 
-                 class="portfolio-lightbox" title="Office Wings">
-                <i class="bx bx-search"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- NV Cafe -->
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="https://nvcafe.vercel.app/screenshot.png" class="img-fluid" alt="NV Cafe" 
-               onerror="this.src='https://via.placeholder.com/400x250/f59e0b/ffffff?text=NV+Cafe'">
-          <div class="portfolio-info">
-            <h4>NV Cafe</h4>
-            <p>Restaurant Website</p>
-            <div class="portfolio-links">
-              <a href="https://nvcafe.vercel.app/" target="_blank" class="portfolio-link">
-                <i class="bx bx-link-external"></i>
-              </a>
-              <a href="https://nvcafe.vercel.app/" data-gallery="portfolioGallery" 
-                 class="portfolio-lightbox" title="NV Cafe">
-                <i class="bx bx-search"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- NV Gym Fitness -->
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="https://nvgymfitness.vercel.app/screenshot.png" class="img-fluid" alt="NV Gym Fitness" 
-               onerror="this.src='https://via.placeholder.com/400x250/ef4444/ffffff?text=NV+Gym'">
-          <div class="portfolio-info">
-            <h4>NV Gym Fitness</h4>
-            <p>Gym & Fitness Website</p>
-            <div class="portfolio-links">
-              <a href="https://nvgymfitness.vercel.app/" target="_blank" class="portfolio-link">
-                <i class="bx bx-link-external"></i>
-              </a>
-              <a href="https://nvgymfitness.vercel.app/" data-gallery="portfolioGallery" 
-                 class="portfolio-lightbox" title="NV Gym Fitness">
-                <i class="bx bx-search"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    <!-- Contact Section -->
-   <!-- Contact Section -->
-<section id="contact" class="contact section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title text-center">
-          <h2>Contact Me</h2>
-          <span class="title-line"></span>
-          <p>Kaam ke liye message karo</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <!-- Contact Info Cards -->
-      <div class="col-lg-10">
-        <div class="row">
-          <!-- WhatsApp -->
-          <div class="col-md-6">
-            <div class="contact-item text-center">
-              <a href="https://wa.me/917796493504?text=Hello%20Dada%20Designer!%20Mujhe%20website%20banvani%20hai" 
-                 class="whatsapp-btn" target="_blank">
-                <i class='bx bxl-whatsapp'></i>
-                <h4>+91 87964 93504</h4>
-                <p>WhatsApp pe message karo</p>
-              </a>
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div class="col-md-6">
-            <div class="contact-item text-center">
-              <a href="mailto:dadadesigner19@gmail.com?subject=Website%20Project%20Inquiry" 
-                 class="email-btn" target="_blank">
-                <i class='bx bx-envelope'></i>
-                <h4>dadadesigner19@gmail.com</h4>
-                <p>Email bhejo project ke liye</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="row mt-5">
-          <div class="col-lg-12">
-            <form action="https://formspree.io/f/xqbnzqdo" method="POST" class="contact-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Tumhara naam *" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Email *" required>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <input type="text" name="subject" class="form-control" placeholder="Project ka naam *" required>
-              </div>
-              
-              <div class="form-group">
-                <textarea name="message" class="form-control" rows="6" placeholder="Project details batao... *" required></textarea>
-              </div>
-              
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg">
-                  <i class='bx bx-send'></i> Message Send Karo
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Phone: <span class="whatsapp-icon">📞 8796493504</span></p>
+        <p>Email: <span class="email-icon">✉️ dadadesigner19@gmail.com</span></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
