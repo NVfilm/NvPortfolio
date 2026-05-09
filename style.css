@@ -297,95 +297,166 @@ body {
 }
 
 /* Projects */
-.projects {
-    padding: 120px 0;
+/* Portfolio Styles */
+.portfolio.section-padding {
+  padding: 80px 0;
+  background: #f8fafc;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.portfolio-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  height: 300px;
 }
 
-.project-card {
-    position: relative;
-    height: 300px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: linear-gradient(45deg, #111, #333);
-    transition: all 0.5s ease;
-    text-decoration: none;
+.portfolio-wrap:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
 }
 
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.portfolio-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.project-card:hover::before {
-    opacity: 1;
+.portfolio-wrap:hover img {
+  transform: scale(1.1);
 }
 
-.project-card:hover {
-    transform: translateY(-20px) scale(1.02);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+.portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.95));
+  color: white;
+  padding: 25px 20px 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
 }
 
-.project-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.9));
-    padding: 2rem;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+.portfolio-wrap:hover .portfolio-info {
+  transform: translateY(0);
 }
 
-.project-card:hover .project-overlay {
-    transform: translateY(0);
+.portfolio-links {
+  margin-top: 15px;
 }
 
-.project-overlay h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.portfolio-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border-radius: 10px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
-/* Contact */
-.contact {
-    padding: 120px 0 60px;
-    background: rgba(255, 255, 255, 0.02);
+.portfolio-links a:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
 }
 
-.contact-content {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
+/* Contact Styles */
 .contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.8;
-    transition: all 0.3s ease;
+  margin-bottom: 30px;
 }
 
-.contact-item:hover {
-    opacity: 1;
-    transform: translateX(10px);
+.whatsapp-btn, .email-btn {
+  display: block;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(37,211,102,0.3);
 }
 
+.whatsapp-btn:hover, .email-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(37,211,102,0.4);
+  color: white;
+}
+
+.email-btn {
+  background: linear-gradient(135deg, #4285F4 0%, #1A73E8 100%);
+  box-shadow: 0 10px 30px rgba(66,133,244,0.3);
+}
+
+.email-btn:hover {
+  box-shadow: 0 20px 40px rgba(66,133,244,0.4);
+}
+
+.contact-item i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact-item h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact-form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.form-control {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37,99,235,0.25);
+  outline: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(37,99,235,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form {
+    padding: 30px 20px;
+  }
+}
 /* Responsive */
 @media (max-width: 768px) {
     .hamburger {
